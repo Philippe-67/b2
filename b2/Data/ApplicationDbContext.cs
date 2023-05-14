@@ -11,5 +11,6 @@ namespace b2.Data
         {
         }
         public DbSet<b2.Models.Voiture> Voiture { get; set; } = default!;
+        public DbSet<b2.Models.Reparation> Reparation { get; set; } = default!;
     }
 }
