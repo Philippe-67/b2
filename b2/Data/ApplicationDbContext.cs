@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
+using b2.Models;
 
 namespace b2.Data
 {
@@ -9,5 +10,6 @@ namespace b2.Data
             : base(options)
         {
         }
+        public DbSet<b2.Models.Voiture> Voiture { get; set; } = default!;
     }
 }
